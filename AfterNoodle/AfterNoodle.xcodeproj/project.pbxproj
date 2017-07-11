@@ -14,6 +14,7 @@
 		A964F45B1F0E205200CEEDB2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A964F4591F0E205200CEEDB2 /* LaunchScreen.storyboard */; };
 		A964F4651F12B98B00CEEDB2 /* HouseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A964F4641F12B98B00CEEDB2 /* HouseViewController.swift */; };
 		A964F4671F12B99700CEEDB2 /* SetUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A964F4661F12B99700CEEDB2 /* SetUpViewController.swift */; };
+		A964F46D1F14D33A00CEEDB2 /* StoreCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A964F46C1F14D33A00CEEDB2 /* StoreCollectionViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		A964F45C1F0E205200CEEDB2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A964F4641F12B98B00CEEDB2 /* HouseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HouseViewController.swift; sourceTree = "<group>"; };
 		A964F4661F12B99700CEEDB2 /* SetUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SetUpViewController.swift; sourceTree = "<group>"; };
+		A964F46C1F14D33A00CEEDB2 /* StoreCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoreCollectionViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +61,7 @@
 			isa = PBXGroup;
 			children = (
 				A964F4501F0E205200CEEDB2 /* AppDelegate.swift */,
+				A964F4691F14D1D100CEEDB2 /* Cell */,
 				A964F4631F121B5A00CEEDB2 /* Controller */,
 				A964F4541F0E205200CEEDB2 /* Main.storyboard */,
 				A964F4571F0E205200CEEDB2 /* Assets.xcassets */,
@@ -76,6 +79,14 @@
 				A964F4661F12B99700CEEDB2 /* SetUpViewController.swift */,
 			);
 			name = Controller;
+			sourceTree = "<group>";
+		};
+		A964F4691F14D1D100CEEDB2 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				A964F46C1F14D33A00CEEDB2 /* StoreCollectionViewCell.swift */,
+			);
+			name = Cell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -152,6 +163,7 @@
 			files = (
 				A964F4671F12B99700CEEDB2 /* SetUpViewController.swift in Sources */,
 				A964F4531F0E205200CEEDB2 /* ViewController.swift in Sources */,
+				A964F46D1F14D33A00CEEDB2 /* StoreCollectionViewCell.swift in Sources */,
 				A964F4651F12B98B00CEEDB2 /* HouseViewController.swift in Sources */,
 				A964F4511F0E205200CEEDB2 /* AppDelegate.swift in Sources */,
 			);

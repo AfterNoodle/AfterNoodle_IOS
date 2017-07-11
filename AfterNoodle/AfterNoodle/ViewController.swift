@@ -10,13 +10,14 @@ import UIKit
 
 class ViewController: UIViewController {
 
-    override func viewWillDisappear(_ animated: Bool) {
-        var navigationBar = UINavigationBar.appearance()
-        navigationBar.tintColor = UIColor(white : 0xDB4C3F, alpha: 1.0)
-    }
+    @IBOutlet weak var tableView: UICollectionView!
+    var arrImg = ["foo","bar","hi!","foo","bar","hi!",]
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        tableView.dataSource = self
+        tableView.delegate = self
     }
 
     override func didReceiveMemoryWarning() {
@@ -24,6 +25,25 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
+ 
+
 
 }
 
+
+extension ViewController:UICollectionViewDataSource, UICollectionViewDelegate{
+    
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return arrImg.count
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "StoreCollectionViewCell", for: indexPath as IndexPath) as! StoreCollectionViewCell
+        
+       // cell.backgroundColor = UIColor.orange
+        cell.txtCategory.text = arrImg[indexPath.row]
+        return cell
+    }
+
+}
