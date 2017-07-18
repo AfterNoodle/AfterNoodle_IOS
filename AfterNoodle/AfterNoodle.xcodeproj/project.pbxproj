@@ -15,6 +15,9 @@
 		A964F4651F12B98B00CEEDB2 /* HouseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A964F4641F12B98B00CEEDB2 /* HouseViewController.swift */; };
 		A964F4671F12B99700CEEDB2 /* SetUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A964F4661F12B99700CEEDB2 /* SetUpViewController.swift */; };
 		A964F46D1F14D33A00CEEDB2 /* StoreCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A964F46C1F14D33A00CEEDB2 /* StoreCollectionViewCell.swift */; };
+		A964F4711F1DE83E00CEEDB2 /* StoreListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A964F4701F1DE83E00CEEDB2 /* StoreListViewController.swift */; };
+		A964F4731F1DF36100CEEDB2 /* StoreListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A964F4721F1DF36100CEEDB2 /* StoreListTableViewCell.swift */; };
+		A964F4751F1DF55A00CEEDB2 /* StoreDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A964F4741F1DF55A00CEEDB2 /* StoreDetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +31,9 @@
 		A964F4641F12B98B00CEEDB2 /* HouseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HouseViewController.swift; sourceTree = "<group>"; };
 		A964F4661F12B99700CEEDB2 /* SetUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SetUpViewController.swift; sourceTree = "<group>"; };
 		A964F46C1F14D33A00CEEDB2 /* StoreCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoreCollectionViewCell.swift; sourceTree = "<group>"; };
+		A964F4701F1DE83E00CEEDB2 /* StoreListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoreListViewController.swift; sourceTree = "<group>"; };
+		A964F4721F1DF36100CEEDB2 /* StoreListTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoreListTableViewCell.swift; sourceTree = "<group>"; };
+		A964F4741F1DF55A00CEEDB2 /* StoreDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoreDetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +83,8 @@
 				A964F4521F0E205200CEEDB2 /* ViewController.swift */,
 				A964F4641F12B98B00CEEDB2 /* HouseViewController.swift */,
 				A964F4661F12B99700CEEDB2 /* SetUpViewController.swift */,
+				A964F4701F1DE83E00CEEDB2 /* StoreListViewController.swift */,
+				A964F4741F1DF55A00CEEDB2 /* StoreDetailViewController.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -85,6 +93,7 @@
 			isa = PBXGroup;
 			children = (
 				A964F46C1F14D33A00CEEDB2 /* StoreCollectionViewCell.swift */,
+				A964F4721F1DF36100CEEDB2 /* StoreListTableViewCell.swift */,
 			);
 			name = Cell;
 			sourceTree = "<group>";
@@ -161,6 +170,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A964F4731F1DF36100CEEDB2 /* StoreListTableViewCell.swift in Sources */,
+				A964F4751F1DF55A00CEEDB2 /* StoreDetailViewController.swift in Sources */,
+				A964F4711F1DE83E00CEEDB2 /* StoreListViewController.swift in Sources */,
 				A964F4671F12B99700CEEDB2 /* SetUpViewController.swift in Sources */,
 				A964F4531F0E205200CEEDB2 /* ViewController.swift in Sources */,
 				A964F46D1F14D33A00CEEDB2 /* StoreCollectionViewCell.swift in Sources */,
@@ -329,6 +341,7 @@
 				A964F4611F0E205200CEEDB2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -13,11 +13,18 @@ class ViewController: UIViewController {
     @IBOutlet weak var tableView: UICollectionView!
     var arrImg = ["foo","bar","hi!","foo","bar","hi!",]
     
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         tableView.dataSource = self
         tableView.delegate = self
+        
     }
 
     override func didReceiveMemoryWarning() {
@@ -44,6 +51,9 @@ extension ViewController:UICollectionViewDataSource, UICollectionViewDelegate{
        // cell.backgroundColor = UIColor.orange
         cell.txtCategory.text = arrImg[indexPath.row]
         return cell
+    }
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        print()
     }
 
 }

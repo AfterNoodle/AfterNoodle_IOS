@@ -1,14 +1,14 @@
 //
-//  StoreTableViewCell.swift
+//  StoreListTableViewCell.swift
 //  AfterNoodle
 //
-//  Created by songmho on 2017. 7. 11..
+//  Created by songmho on 2017. 7. 18..
 //  Copyright © 2017년 AfterNoodle. All rights reserved.
 //
 
 import UIKit
 
-class StoreTableViewCell: UITableViewCell {
+class StoreListTableViewCell: UITableViewCell {
 
     override func awakeFromNib() {
         super.awakeFromNib()
