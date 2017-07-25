@@ -10,6 +10,14 @@ import UIKit
 
 class StoreDetailViewController: UIViewController {
 
+    var curShop:String = ""
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        navigationController?.visibleViewController?.navigationItem.title = self.curShop
+
+    }
+
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 

@@ -11,7 +11,8 @@ import UIKit
 class ViewController: UIViewController {
 
     @IBOutlet weak var tableView: UICollectionView!
-    var arrImg = ["foo","bar","hi!","foo","bar","hi!",]
+    var category = ["foo","bar","hi!","foo","bar","hi!"]
+    var selectedCtg  = ""
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
@@ -32,16 +33,22 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
- 
-
-
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "ShopListSegue"{
+            let sendtimer=segue.destination as! StoreListViewController
+            sendtimer.curCtg = self.selectedCtg
+        }
+    }
+    
 }
+
+
 
 
 extension ViewController:UICollectionViewDataSource, UICollectionViewDelegate{
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return arrImg.count
+        return category.count
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
@@ -49,11 +56,12 @@ extension ViewController:UICollectionViewDataSource, UICollectionViewDelegate{
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "StoreCollectionViewCell", for: indexPath as IndexPath) as! StoreCollectionViewCell
         
        // cell.backgroundColor = UIColor.orange
-        cell.txtCategory.text = arrImg[indexPath.row]
+        cell.txtCategory.text = self.category[indexPath.row]
         return cell
     }
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        print()
+        self.selectedCtg = self.category[indexPath.row]
+        self.performSegue(withIdentifier: "ShopListSegue", sender: self)
     }
 
 }

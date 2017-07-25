@@ -10,6 +10,9 @@ import UIKit
 
 class StoreListTableViewCell: UITableViewCell {
 
+    @IBOutlet weak var txtShopName: UILabel!
+    @IBOutlet weak var btnFab: UIButton!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
